@@ -121,7 +121,10 @@ def draw_mandelbrot(
     img.show()
 
     current_time_str = datetime.now(tz=timezone.utc).strftime("%Y%m%d_%H%M%S%z")
-    img.save(f"mandel-{size.x}x{size.y}-{current_time_str}.png", "PNG")
+    filename = f"mandel-{size.x}x{size.y}-{current_time_str}.png"
+    img.save(filename, "PNG")
+
+    print(f"{datetime.now()}: saved as {filename}")
 
 
 def argument_parser():
