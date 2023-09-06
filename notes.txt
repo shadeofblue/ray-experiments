@@ -5,6 +5,7 @@ mandelbrot rendering
 3000x2000 2 chunks no ray: 5:08
 3000x2000 1 chunk no ray: 5:07
 
+
 3000x2000 128 chunks local ray: 1:35
 3000x2000 32 chunks local ray: 1:34
 3000x2000 16 chunks local ray: 1:32
@@ -16,15 +17,11 @@ mandelbrot rendering
 
 AWS: min_workers: 8, max_workers: 32 
 
-3000x2000 128 chunks AWS ray: 1:29
-3000x2000 128 chunks AWS ray (when resized to ~56 cpus): 0:25
-3000x2000 128 chunks AWS ray (when resized to ~30 cpus): 0:38
-3000x2000 32 chunks AWS ray: 1:23
-3000x2000 32 chunks AWS ray (when resized to ~30 cpus): 0:37
-3000x2000 16 chunks AWS ray (resized to ~50 cpus): 0:51
-3000x2000 16 chunks AWS ray: 1:21 / 0:47
+3000x2000 128 chunks AWS ray: 1:29 / 0:38 (~30 cpus) / 0:25 (~50 cpus)
+3000x2000 32 chunks AWS ray: 1:23 / 0:37 (~30 cpus)
+3000x2000 16 chunks AWS ray: 1:21 / 0:51 (~50 cpus) / 0:47
 3000x2000 8 chunks AWS ray: 1:34 / 0:54
 3000x2000 4 chunks AWS ray: 2:16 / 3:04 / 1:39
-3000x2000 2 chunks AWS ray: 7:00 / 5:15 / 6:49 / 2:56 / 3:06
+3000x2000 2 chunks AWS ray: 7:00 (recovery after failure) / 5:15 / 6:49 / 2:56 / 3:06
 3000x2000 1 chunk AWS ray: 5:55
 
