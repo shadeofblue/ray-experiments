@@ -25,3 +25,6 @@ AWS: min_workers: 8, max_workers: 32
 3000x2000 2 chunks AWS ray: 7:00 (recovery after failure) / 5:15 / 6:49 / 2:56 / 3:06
 3000x2000 1 chunk AWS ray: 5:55
 
+3000x2000 1 chunk AWS no ray: 5:54
+
+
